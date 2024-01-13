@@ -3,9 +3,6 @@ os: linux
 files:
   - source: /
     destination: /app
-permissions:
-  - object: /app/app.py
-    pattern: "755"
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
