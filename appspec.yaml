@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /app
+permissions:
+  - object: /app/app.py
+    pattern: "755"
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_application.sh
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_application.sh
+      runas: root
