@@ -2,7 +2,7 @@
 
 
 if command -v docker &> /dev/null; then
-    sudo systemctl strat docker
+    sudo systemctl start docker
     sudo systemctl enable docker
 else
     sudo yum update
