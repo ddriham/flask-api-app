@@ -24,5 +24,5 @@ This will start the application on port 5000
 Swagger-UI can be used to test the application.
 ![alt text](sample-flask-application.png)
 
-The server will start at <http://localhost:5000>.
+The server will start at <http://localhost:5000/api/doc
 
